@@ -30,13 +30,25 @@ jobs:
       - name: Run tests
         run: pytest tests/ --maxfail=1 --disable-warnings -q
 
-   train-and-quantize:
-    ...
+  train-and-quantize:
     runs-on: ubuntu-latest
     needs: test-suite
     env:
       PYTHONPATH: .
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
       - name: Train model
         run: python src/train.py
 
@@ -52,14 +64,12 @@ jobs:
           name: models
           path: models/
 
-
-    build-and-run-docker:
-    ...
-      runs-on: ubuntu-latest
-      needs: test-suite
-      env:
-        PYTHONPATH: .
-      steps:
+  build-and-run-docker:
+    runs-on: ubuntu-latest
+    needs: train-and-quantize
+    env:
+      PYTHONPATH: .
+    steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
