@@ -13,6 +13,8 @@ jobs:
   # Step 1: Run Unit Tests
   test-suite:
     runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: .
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
