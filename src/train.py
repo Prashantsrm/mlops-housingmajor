@@ -1,5 +1,5 @@
 import numpy as np
-from utils import fetch_data_split, build_regressor, persist_model, compute_scores
+from src.utils import fetch_data_split, build_regressor, persist_model, compute_scores
 
 def run_training():
     """Entry point for model training."""
