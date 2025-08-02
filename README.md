@@ -142,8 +142,8 @@ tests/test_train.py ....    # 4 passed
 
 ## 👤 Author
 
-Prashant Mishra  
-August 2025
+Prashant Kumar Mishra
+Roll no- G24AI1103  
 
 
 *Thanks for reviewing my project!*
