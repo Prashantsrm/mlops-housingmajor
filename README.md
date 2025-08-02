@@ -145,11 +145,7 @@ tests/test_train.py ....    # 4 passed
 Prashant Mishra  
 August 2025
 
-If you have any questions or want to replicate this MLOps workflow, just follow the steps above—or open an issue!
 
 *Thanks for reviewing my project!*
 
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/83512370/53cd982e-8630-4da5-a31c-49928529dbe1/image.jpg
-[2] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/83512370/90b4d2f2-f2bb-4968-82ce-ea13faac2007/image.jpg
-[3] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/83512370/c9e90b53-6e67-4419-bcf5-759279a4eda0/image.jpg
-[4] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/attachments/images/83512370/8568ff16-e5b8-40ff-9d14-0ba7db67d93d/image.jpg
+
